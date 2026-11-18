@@ -1,0 +1,244 @@
+# Danh sách lỗi — TRƯỚC khi sửa (v1)
+ảnh đã quét: 202
+
+class_names -> 2 dòng
+duplicates -> 17 dòng
+images -> 5 dòng
+label_format -> 37 dòng
+missing_labels -> 18 dòng
+second_opinion -> 128 dòng
+stats -> 4 dòng
+
+[ERROR] BAD_CLASS_ID         img_0020.txt:3  ID lớp ngoài phạm vi: 93
+[ERROR] BAD_CLASS_ID         img_0099.txt:2  ID lớp ngoài phạm vi: -1
+[ERROR] BAD_CLASS_ID         img_0104.txt:1  ID lớp ngoài phạm vi: 7
+[ERROR] BAD_CLASS_ID         img_0117.txt:12  ID lớp ngoài phạm vi: -1
+[ERROR] BAD_CLASS_ID         img_0194.txt:1  ID lớp ngoài phạm vi: 4
+[ERROR] BAD_CLASS_ID         img_0199.txt:7  ID lớp ngoài phạm vi: 4
+[ERROR] BAD_CLASS_NAME       data.yaml  tên lớp lạ: 'Person' (id 1)
+[ERROR] BAD_CLASS_NAME       data.yaml  tên lớp lạ: 'Bus' (id 3)
+[ERROR] BAD_FORMAT           img_0014.txt:1  Dòng nhãn không hợp lệ: giá trị nan/inf
+[ERROR] BAD_FORMAT           img_0022.txt:1  Dòng nhãn không hợp lệ: giá trị nan/inf
+[ERROR] BAD_FORMAT           img_0179.txt:1  Dòng nhãn không hợp lệ: cần 5 cột, có 4
+[ERROR] BAD_SIZE             img_0107  cạnh ngắn 180px < 250px
+[ERROR] BAD_SIZE             img_0113  cạnh ngắn 226px < 250px
+[ERROR] BAD_SIZE             img_0122  cạnh ngắn 180px < 250px
+[ERROR] BOX_OUT_OF_IMAGE     img_0030.txt:9  Box tràn 0.023
+[ERROR] BOX_OUT_OF_IMAGE     img_0043.txt:1  Box tràn 0.03
+[ERROR] BOX_OUT_OF_IMAGE     img_0078.txt:2  Box tràn 0.03
+[ERROR] BOX_OUT_OF_IMAGE     img_0087.txt:1  Box tràn 0.06
+[ERROR] BOX_OUT_OF_IMAGE     img_0108.txt:1  Box tràn 0.03
+[ERROR] BOX_OUT_OF_IMAGE     img_0144.txt:1  Box tràn 0.06
+[ERROR] BOX_OUT_OF_IMAGE     img_0152.txt:1  Box tràn 0.03
+[ERROR] BOX_OUT_OF_IMAGE     img_0204.txt:1  Box tràn 0.06
+[ERROR] BOX_ZERO             img_0050.txt:1  Chiều rộng hoặc chiều cao không dương
+[ERROR] BOX_ZERO             img_0066.txt:3  Chiều rộng hoặc chiều cao không dương
+[ERROR] BOX_ZERO             img_0092.txt:2  Chiều rộng hoặc chiều cao không dương
+[ERROR] BOX_ZERO             img_0185.txt:10  Chiều rộng hoặc chiều cao không dương
+[ERROR] CORRUPT_IMAGE        img_0010  không mở được: UnidentifiedImageError
+[ERROR] CORRUPT_IMAGE        img_0136  không mở được: OSError
+[ERROR] DUP_BOX              img_0001.txt:3  Box trùng với dòng 1
+[ERROR] DUP_BOX              img_0006.txt:2  Box trùng với dòng 1
+[ERROR] DUP_BOX              img_0024.txt:8  Box trùng với dòng 6
+[ERROR] DUP_BOX              img_0094.txt:13  Box trùng với dòng 9
+[ERROR] DUP_BOX              img_0109.txt:2  Box trùng với dòng 1
+[ERROR] DUP_BOX              img_0141.txt:2  Box trùng với dòng 1
+[ERROR] DUP_BOX              img_0193.txt:7  Box trùng với dòng 2
+[ERROR] DUP_IMAGE_EXACT      img_0039  trùng từng byte với img_0012
+[ERROR] DUP_IMAGE_EXACT      img_0080  trùng từng byte với img_0071
+[ERROR] DUP_IMAGE_EXACT      img_0102  trùng từng byte với img_0082
+[ERROR] DUP_IMAGE_EXACT      img_0156  trùng từng byte với img_0147
+[ERROR] DUP_IMAGE_EXACT      img_0162  trùng từng byte với img_0054
+[ERROR] DUP_IMAGE_EXACT      img_0203  trùng từng byte với img_0145
+[ERROR] DUP_IMAGE_EXACT      img_0207  trùng từng byte với img_0182
+[ERROR] DUP_IMAGE_EXACT      img_0222  trùng từng byte với img_0151
+[ERROR] DUP_IMAGE_NEAR       img_0076  trùng gần đúng với img_0042 (phash 0)
+[ERROR] DUP_IMAGE_NEAR       img_0143  trùng gần đúng với img_0037 (phash 0)
+[ERROR] DUP_IMAGE_NEAR       img_0186  trùng gần đúng với img_0061 (phash 10)
+[ERROR] DUP_IMAGE_NEAR       img_0223  trùng gần đúng với img_0077 (phash 6)
+[ERROR] LEAK_TEST            img_0049  trùng ảnh kho test/val: test/test_033.jpg
+[ERROR] LEAK_TEST            img_0101  trùng ảnh kho test/val: test/test_039.jpg
+[ERROR] LEAK_TEST            img_0167  trùng ảnh kho test/val: test/test_044.jpg
+[ERROR] LEAK_TEST            img_0174  trùng ảnh kho test/val: test/test_085.jpg
+[ERROR] LEAK_TEST            img_0221  trùng ảnh kho test/val: test/test_009.jpg
+[ERROR] MISSING_LABEL_FILE   img_0031  ảnh không có file nhãn
+[ERROR] MISSING_LABEL_FILE   img_0053  ảnh không có file nhãn
+[ERROR] MISSING_LABEL_FILE   img_0126  ảnh không có file nhãn
+[ERROR] MISSING_LABEL_FILE   img_0135  ảnh không có file nhãn
+[ERROR] MISSING_LABEL_FILE   img_0170  ảnh không có file nhãn
+[ERROR] MISSING_LABEL_FILE   img_0219  ảnh không có file nhãn
+[WARN ] BOX_HUGE             img_0018.txt:1  Box chiếm diện tích quá lớn
+[WARN ] BOX_HUGE             img_0128.txt:1  Box chiếm diện tích quá lớn
+[WARN ] BOX_HUGE             img_0196.txt:1  Box chiếm diện tích quá lớn
+[WARN ] BOX_TINY             img_0026.txt:6  Cạnh ngắn của box dưới ngưỡng pixel
+[WARN ] BOX_TINY             img_0051.txt:5  Cạnh ngắn của box dưới ngưỡng pixel
+[WARN ] BOX_TINY             img_0069.txt:2  Cạnh ngắn của box dưới ngưỡng pixel
+[WARN ] BOX_TINY             img_0161.txt:2  Cạnh ngắn của box dưới ngưỡng pixel
+[WARN ] BOX_TINY             img_0161.txt:3  Cạnh ngắn của box dưới ngưỡng pixel
+[WARN ] BOX_TINY             img_0161.txt:4  Cạnh ngắn của box dưới ngưỡng pixel
+[WARN ] CLASS_RARE           <dataset>  lớp -1 chỉ có 2 box
+[WARN ] CLASS_RARE           <dataset>  lớp 4 chỉ có 2 box
+[WARN ] CLASS_RARE           <dataset>  lớp 7 chỉ có 1 box
+[WARN ] CLASS_RARE           <dataset>  lớp 93 chỉ có 1 box
+[WARN ] EMPTY_LABEL          img_0004  file nhãn rỗng: ảnh nền hay thiếu nhãn?
+[WARN ] EMPTY_LABEL          img_0013  file nhãn rỗng: ảnh nền hay thiếu nhãn?
+[WARN ] EMPTY_LABEL          img_0057  file nhãn rỗng: ảnh nền hay thiếu nhãn?
+[WARN ] EMPTY_LABEL          img_0065  file nhãn rỗng: ảnh nền hay thiếu nhãn?
+[WARN ] EMPTY_LABEL          img_0097  file nhãn rỗng: ảnh nền hay thiếu nhãn?
+[WARN ] EMPTY_LABEL          img_0103  file nhãn rỗng: ảnh nền hay thiếu nhãn?
+[WARN ] EMPTY_LABEL          img_0129  file nhãn rỗng: ảnh nền hay thiếu nhãn?
+[WARN ] EMPTY_LABEL          img_0147  file nhãn rỗng: ảnh nền hay thiếu nhãn?
+[WARN ] EMPTY_LABEL          img_0157  file nhãn rỗng: ảnh nền hay thiếu nhãn?
+[WARN ] EMPTY_LABEL          img_0178  file nhãn rỗng: ảnh nền hay thiếu nhãn?
+[WARN ] EMPTY_LABEL          img_0184  file nhãn rỗng: ảnh nền hay thiếu nhãn?
+[WARN ] EMPTY_LABEL          img_0192  file nhãn rỗng: ảnh nền hay thiếu nhãn?
+[WARN ] POSSIBLE_FALSE_POS   img_0024.txt:7  Box lớp 0 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0030.txt:9  Box lớp 1 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0035.txt:2  Box lớp 1 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0050.txt:1  Box lớp 1 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0066.txt:3  Box lớp 1 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0068.txt:7  Box lớp 1 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0069.txt:2  Box lớp 1 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0070.txt:6  Box lớp 1 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0078.txt:2  Box lớp 0 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0091.txt:7  Box lớp 2 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0092.txt:2  Box lớp 0 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0092.txt:10  Box lớp 0 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0095.txt:6  Box lớp 1 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0099.txt:15  Box lớp 1 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0100.txt:4  Box lớp 1 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0108.txt:1  Box lớp 2 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0111.txt:2  Box lớp 3 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0144.txt:1  Box lớp 1 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0149.txt:3  Box lớp 0 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0150.txt:3  Box lớp 1 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0155.txt:2  Box lớp 1 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0155.txt:3  Box lớp 0 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0177.txt:2  Box lớp 3 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0180.txt:5  Box lớp 3 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0185.txt:10  Box lớp 1 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0189.txt:4  Box lớp 0 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0193.txt:6  Box lớp 3 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0204.txt:1  Box lớp 1 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0206.txt:1  Box lớp 1 không khớp dự đoán nào
+[WARN ] POSSIBLE_LOOSE_BOX   img_0015  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0018  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0036  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0038  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0045  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0046  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0054  Box lớp 0 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0062  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0062  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0064  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0077  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0082  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0090  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0094  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0096  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0119  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0125  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0127  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0127  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0131  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0142  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0171  Box lớp 0 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0171  Box lớp 0 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0175  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0179  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0200  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0217  Box lớp 0 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0217  Box lớp 0 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_MISSING     img_0001  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0004  Có thể thiếu box lớp 0
+[WARN ] POSSIBLE_MISSING     img_0004  Có thể thiếu box lớp 0
+[WARN ] POSSIBLE_MISSING     img_0012  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0014  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0020  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0022  Có thể thiếu box lớp 0
+[WARN ] POSSIBLE_MISSING     img_0028  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0030  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0032  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0047  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0050  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0057  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0058  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0065  Có thể thiếu box lớp 3
+[WARN ] POSSIBLE_MISSING     img_0066  Có thể thiếu box lớp 3
+[WARN ] POSSIBLE_MISSING     img_0067  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0068  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0078  Có thể thiếu box lớp 0
+[WARN ] POSSIBLE_MISSING     img_0086  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0092  Có thể thiếu box lớp 0
+[WARN ] POSSIBLE_MISSING     img_0093  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0096  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0099  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0100  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0103  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0104  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0116  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0117  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0121  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0127  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0131  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0134  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0144  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0145  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0147  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0151  Có thể thiếu box lớp 3
+[WARN ] POSSIBLE_MISSING     img_0157  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0159  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0160  Có thể thiếu box lớp 2
+[WARN ] POSSIBLE_MISSING     img_0164  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0165  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0178  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0184  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0187  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0194  Có thể thiếu box lớp 0
+[WARN ] POSSIBLE_MISSING     img_0199  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0204  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0210  Có thể thiếu box lớp 0
+[WARN ] POSSIBLE_MISSING     img_0211  Có thể thiếu box lớp 0
+[WARN ] POSSIBLE_MISSING     img_0215  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0218  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0220  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_WRONG_CLASS img_0019  Model gợi ý lớp 0, khác lớp trong nhãn
+[WARN ] POSSIBLE_WRONG_CLASS img_0020  Model gợi ý lớp 3, khác lớp trong nhãn
+[WARN ] POSSIBLE_WRONG_CLASS img_0021  Model gợi ý lớp 1, khác lớp trong nhãn
+[WARN ] POSSIBLE_WRONG_CLASS img_0034  Model gợi ý lớp 1, khác lớp trong nhãn
+[WARN ] POSSIBLE_WRONG_CLASS img_0037  Model gợi ý lớp 0, khác lớp trong nhãn
+[WARN ] POSSIBLE_WRONG_CLASS img_0070  Model gợi ý lớp 1, khác lớp trong nhãn
+[WARN ] POSSIBLE_WRONG_CLASS img_0071  Model gợi ý lớp 1, khác lớp trong nhãn
+[WARN ] POSSIBLE_WRONG_CLASS img_0075  Model gợi ý lớp 1, khác lớp trong nhãn
+[WARN ] POSSIBLE_WRONG_CLASS img_0083  Model gợi ý lớp 0, khác lớp trong nhãn
+[WARN ] POSSIBLE_WRONG_CLASS img_0112  Model gợi ý lớp 1, khác lớp trong nhãn
+[WARN ] POSSIBLE_WRONG_CLASS img_0124  Model gợi ý lớp 0, khác lớp trong nhãn
+[WARN ] POSSIBLE_WRONG_CLASS img_0160  Model gợi ý lớp 2, khác lớp trong nhãn
+[WARN ] POSSIBLE_WRONG_CLASS img_0183  Model gợi ý lớp 1, khác lớp trong nhãn
+[WARN ] POSSIBLE_WRONG_CLASS img_0185  Model gợi ý lớp 1, khác lớp trong nhãn
+[WARN ] POSSIBLE_WRONG_CLASS img_0191  Model gợi ý lớp 1, khác lớp trong nhãn
+[WARN ] POSSIBLE_WRONG_CLASS img_0202  Model gợi ý lớp 1, khác lớp trong nhãn
+[WARN ] POSSIBLE_WRONG_CLASS img_0208  Model gợi ý lớp 1, khác lớp trong nhãn
+[WARN ] POSSIBLE_WRONG_CLASS img_0212  Model gợi ý lớp 1, khác lớp trong nhãn
+
+## Tổng hợp theo mã
+error BAD_CLASS_ID           6
+error BAD_CLASS_NAME         2
+error BAD_FORMAT             3
+error BAD_SIZE               3
+error BOX_OUT_OF_IMAGE       8
+error BOX_ZERO               4
+error CORRUPT_IMAGE          2
+error DUP_BOX                7
+error DUP_IMAGE_EXACT        8
+error DUP_IMAGE_NEAR         4
+error LEAK_TEST              5
+error MISSING_LABEL_FILE     6
+warn  BOX_HUGE               3
+warn  BOX_TINY               6
+warn  CLASS_RARE             4
+warn  EMPTY_LABEL            12
+warn  POSSIBLE_FALSE_POS     29
+warn  POSSIBLE_LOOSE_BOX     28
+warn  POSSIBLE_MISSING       53
+warn  POSSIBLE_WRONG_CLASS   18

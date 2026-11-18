@@ -1,0 +1,89 @@
+# Danh sách lỗi — SAU người duyệt (v3)
+ảnh đã quét: 202
+
+label_format -> 10 dòng
+missing_labels -> 4 dòng
+second_opinion -> 57 dòng
+
+[WARN ] BOX_HUGE             img_0018.txt:1  Box chiếm diện tích quá lớn
+[WARN ] BOX_HUGE             img_0128.txt:1  Box chiếm diện tích quá lớn
+[WARN ] BOX_HUGE             img_0196.txt:1  Box chiếm diện tích quá lớn
+[WARN ] BOX_TINY             img_0026.txt:6  Cạnh ngắn của box dưới ngưỡng pixel
+[WARN ] BOX_TINY             img_0051.txt:5  Cạnh ngắn của box dưới ngưỡng pixel
+[WARN ] BOX_TINY             img_0069.txt:2  Cạnh ngắn của box dưới ngưỡng pixel
+[WARN ] BOX_TINY             img_0161.txt:2  Cạnh ngắn của box dưới ngưỡng pixel
+[WARN ] BOX_TINY             img_0161.txt:3  Cạnh ngắn của box dưới ngưỡng pixel
+[WARN ] BOX_TINY             img_0161.txt:4  Cạnh ngắn của box dưới ngưỡng pixel
+[WARN ] BOX_TINY             img_0183.txt:11  Cạnh ngắn của box dưới ngưỡng pixel
+[WARN ] EMPTY_LABEL          img_0013  file nhãn rỗng: ảnh nền hay thiếu nhãn?
+[WARN ] EMPTY_LABEL          img_0097  file nhãn rỗng: ảnh nền hay thiếu nhãn?
+[WARN ] EMPTY_LABEL          img_0129  file nhãn rỗng: ảnh nền hay thiếu nhãn?
+[WARN ] EMPTY_LABEL          img_0192  file nhãn rỗng: ảnh nền hay thiếu nhãn?
+[WARN ] POSSIBLE_FALSE_POS   img_0014.txt:2  Box lớp 1 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0022.txt:2  Box lớp 1 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0035.txt:2  Box lớp 1 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0068.txt:8  Box lớp 1 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0069.txt:2  Box lớp 1 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0075.txt:6  Box lớp 1 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0091.txt:7  Box lớp 2 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0093.txt:3  Box lớp 1 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0095.txt:6  Box lớp 1 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0111.txt:2  Box lớp 3 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0124.txt:8  Box lớp 1 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0131.txt:11  Box lớp 1 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0134.txt:5  Box lớp 1 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0149.txt:3  Box lớp 0 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0150.txt:3  Box lớp 1 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0177.txt:2  Box lớp 3 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0180.txt:5  Box lớp 3 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0189.txt:4  Box lớp 0 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0191.txt:1  Box lớp 0 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0206.txt:1  Box lớp 1 không khớp dự đoán nào
+[WARN ] POSSIBLE_FALSE_POS   img_0212.txt:4  Box lớp 1 không khớp dự đoán nào
+[WARN ] POSSIBLE_LOOSE_BOX   img_0015  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0018  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0021  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0036  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0038  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0045  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0046  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0054  Box lớp 0 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0058  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0064  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0077  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0082  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0090  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0099  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0119  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0125  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0142  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0175  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0200  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_LOOSE_BOX   img_0212  Box lớp 1 có thể lỏng hoặc lệch
+[WARN ] POSSIBLE_MISSING     img_0032  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0062  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0121  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0126  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0127  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0127  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0135  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0159  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0160  Có thể thiếu box lớp 2
+[WARN ] POSSIBLE_MISSING     img_0183  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0199  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_MISSING     img_0210  Có thể thiếu box lớp 0
+[WARN ] POSSIBLE_MISSING     img_0220  Có thể thiếu box lớp 1
+[WARN ] POSSIBLE_WRONG_CLASS img_0078  Model gợi ý lớp 0, khác lớp trong nhãn
+[WARN ] POSSIBLE_WRONG_CLASS img_0083  Model gợi ý lớp 0, khác lớp trong nhãn
+[WARN ] POSSIBLE_WRONG_CLASS img_0220  Model gợi ý lớp 0, khác lớp trong nhãn
+
+## Tổng hợp theo mã
+warn  BOX_HUGE               3
+warn  BOX_TINY               7
+warn  EMPTY_LABEL            4
+warn  POSSIBLE_FALSE_POS     21
+warn  POSSIBLE_LOOSE_BOX     20
+warn  POSSIBLE_MISSING       13
+warn  POSSIBLE_WRONG_CLASS   3
+
+Kết luận: HOLD — Không còn lỗi bắt buộc; 38/202 ảnh còn cảnh báo (18.81%), đạt hoặc vượt ngưỡng 10.00%

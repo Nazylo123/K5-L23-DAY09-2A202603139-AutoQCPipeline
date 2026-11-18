@@ -27,13 +27,97 @@ Bẫy cần nghĩ tới (có test cho từng cái)
 
 Gợi ý: `yaml.safe_load / safe_dump`.
 """
-from collections import defaultdict  # noqa: F401
+from collections import defaultdict
 
-import yaml  # noqa: F401
+import yaml
 
-from ..common import ERROR, parse_yolo_line  # noqa: F401
+from ..common import ERROR, ROOT, parse_yolo_line
+
+
+DROP_CODES = {"BAD_FORMAT", "BAD_CLASS_ID", "BOX_ZERO", "DUP_BOX"}
+REMOVE_CODES = {"LEAK_TEST", "CORRUPT_IMAGE", "BAD_SIZE"}
+
+
+def _clip(text):
+    cls, x, y, w, h = parse_yolo_line(text)
+    left, top = max(0, x - w / 2), max(0, y - h / 2)
+    right, bottom = min(1, x + w / 2), min(1, y + h / 2)
+    if right <= left or bottom <= top:
+        return None
+    return f"{cls} {(left + right) / 2} {(top + bottom) / 2} {right - left} {bottom - top}"
 
 
 def fix(ds, issues, cfg):
-    # TODO
-    raise NotImplementedError("autofix chưa làm")
+    root = ds.root.resolve()
+    source = (ROOT / "data").resolve()
+    if root.is_relative_to(source):
+        raise ValueError("Chỉ sửa bản sao làm việc, không sửa dữ liệu gốc")
+
+    def local(path):
+        if not path.resolve().is_relative_to(root):
+            raise ValueError(f"Đường dẫn nằm ngoài bản sao làm việc: {path}")
+        return path
+
+    fixes = []
+    def record(image, action, before, after, line=None):
+        fixes.append(dict(image=image, line=line, action=action, before=before, after=after))
+
+    remove = set()
+    missing = set()
+    edits = defaultdict(lambda: defaultdict(set))
+    rename = False
+    for issue in issues:
+        if issue.severity != ERROR:
+            continue
+        code, stem = issue.code, issue.image
+        if code in REMOVE_CODES or code.startswith("DUP_IMAGE_"):
+            remove.add(stem)
+        elif code == "MISSING_LABEL_FILE":
+            missing.add(stem)
+        elif code == "BAD_CLASS_NAME":
+            rename = True
+        elif issue.line is not None and (code in DROP_CODES or code == "BOX_OUT_OF_IMAGE"):
+            edits[stem][issue.line].add(code)
+
+    for stem in sorted(remove):
+        image = ds.image_path(stem)
+        if image is not None:
+            label = local(ds.label_path(stem))
+            local(image).unlink()
+            label.unlink(missing_ok=True)
+            record(stem, "remove_image", image.name, "")
+    for stem in sorted(missing - remove):
+        if ds.image_path(stem) is not None and not local(ds.label_path(stem)).exists():
+            record(stem, "needs_label", "(không có file)", "chuyển người gán")
+    if rename:
+        path = local(ds.yaml_path)
+        data = (yaml.safe_load(path.read_text(encoding="utf-8")) or {}) if path.exists() else {}
+        old_names = data.get("names")
+        names = list(cfg["classes"])
+        if old_names != names:
+            data["names"] = names
+            path.write_text(yaml.safe_dump(data, allow_unicode=True, sort_keys=False), encoding="utf-8")
+            record("data.yaml", "rename_classes", str(old_names), str(names))
+
+    for stem in sorted(edits.keys() - remove):
+        path = local(ds.label_path(stem))
+        if not path.exists():
+            continue
+        lines = path.read_text(encoding="utf-8", errors="replace").splitlines(keepends=True)
+        updated = []
+        for line, original in enumerate(lines, 1):
+            codes = edits[stem].get(line)
+            if not codes:
+                updated.append(original)
+                continue
+            before = original.rstrip("\r\n")
+            after = None if codes & DROP_CODES else _clip(before)
+            if after is None:
+                record(stem, "drop_line", before, "", line)
+            else:
+                updated.append(after + original[len(before):])
+                if after != before:
+                    record(stem, "clip_box", before, after, line)
+        if updated != lines:
+            path.write_text("".join(updated), encoding="utf-8")
+    return fixes
